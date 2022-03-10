@@ -1,0 +1,17 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"left_back_wheel" [label="left_back_wheel"];
+"right_back_wheel" [label="right_back_wheel"];
+"left_front_wheel" [label="left_front_wheel"];
+"right_front_wheel" [label="right_front_wheel"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "back_left_joint" [label="xyz: -0.4 0.35 -0.03 \nrpy: -1.57079 0 0"]
+"back_left_joint" -> "left_back_wheel"
+"base_link" -> "back_right_joint" [label="xyz: -0.4 -0.35 -0.03 \nrpy: -1.57079 0 0"]
+"back_right_joint" -> "right_back_wheel"
+"base_link" -> "front_left_joint" [label="xyz: 0.4 0.35 -0.03 \nrpy: -1.57079 0 0"]
+"front_left_joint" -> "left_front_wheel"
+"base_link" -> "front_right_joint" [label="xyz: 0.4 -0.35 -0.03 \nrpy: -1.57079 0 0"]
+"front_right_joint" -> "right_front_wheel"
+}

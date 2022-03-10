@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>chassis</name>
+    <version>0.1.1</version>
+    <description>Meta package that contains package of Mr Wu's chassis.</description>
+    <maintainer email="liaoqiayuan@gmail.com">Qiayuan Liao</maintainer>
+
+    <license>BSD</license>
+
+    <url type="repository"></url>
+    <url type="bugtracker"></url>
+
+    <author email="liaoqiayuan@gmail.com">Qiayuan Liao</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <export>
+        <metapackage/>
+    </export>
+</package>
